@@ -1,0 +1,10 @@
+@mixin container() {
+	max-width: 968px;
+	margin: 0 auto;
+	padding: 0 14px;
+
+	@media screen and (min-width: 1400px) {
+		max-width: 1320px;
+		padding: 0;
+	}
+}

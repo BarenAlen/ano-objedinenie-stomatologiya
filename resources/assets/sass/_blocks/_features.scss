@@ -1,0 +1,65 @@
+.feature {
+	font-weight: 300;
+	padding-top: 68px;
+	background-position: left top;
+	background-repeat: no-repeat !important;
+
+	&_title {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 1.3125em;
+		color: #000;
+		margin-bottom: 10px;
+	}
+
+	&--specialist {
+		background-image: url("../img/features/specialist.png");
+		background-size: 64px;
+	}
+
+	&--location {
+		background-image: url("../img/features/location.png");
+		background-size: 51px;
+	}
+
+	&--patients {
+		background-image: url("../img/features/patients.png");
+		background-size: 68px;
+	}
+
+	&--lab {
+		background-image: url("../img/features/lab.png");
+		background-size: 77px;
+	}
+
+	@media screen and (min-width: 960px) {
+
+		padding-top: 95px;
+
+		&_title {
+			margin-bottom: 20px;
+		}
+
+		&--specialist {
+			background-size: 85px;
+		}
+
+		&--location {
+			background-size: 75px;
+		}
+
+		&--patients {
+			background-size: 88px;
+		}
+
+		&--lab {
+			background-size: 108px;
+		}
+	}
+}
+
+@include grid-row('.feature', (margin: 40px, items: 2));
+
+@media screen and (min-width: 768px) {
+	@include grid-row('.feature', (margin: 0, items: 1));
+}

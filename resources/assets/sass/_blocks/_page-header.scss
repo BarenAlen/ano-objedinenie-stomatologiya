@@ -1,0 +1,174 @@
+.page-header {
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 100;
+    box-shadow: 0 0 10px 1px #c7dff2;
+
+	&_container {
+		@include container();
+		@include clearfix();
+		display: table;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	&_top {
+		background-color: #fff;
+	}
+
+	&_logo {
+		display: block;
+		border-bottom: 0;
+		padding-top: 4px;
+		img {
+			width: 90px;
+		}
+	}
+
+	&_font-menu,
+	&_btn .btn-enroll {
+		display: none;
+	}
+
+	&_search {
+		padding-right: 10px;
+		width: 100%;
+		position: relative;
+		height: 35px;
+
+		input {
+			border: 0;
+			transition: .75s;
+	        transition-delay: .3s;
+		}
+
+		.input-group_input {
+			transition: .75s;
+	    	transform: translateX(100%);
+		}
+
+		.input-group_btn {
+			transition: .75s;
+        	transition-delay: .3s;
+        	border: 0;
+		}
+	}
+
+	&_search-toggler {
+		border: 0;
+		background: none;
+		padding: 0;
+		position: absolute;
+	    right: 11px;
+    	top: 8px;
+    	z-index: 100;
+	}
+
+	&_search,
+	&_btn {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	@media screen and (min-width: 960px) {
+
+		padding: 0;
+		position: static;
+		box-shadow: none;
+
+		&_container {
+			overflow: visible;
+		}
+
+		&_bottom {
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+
+		&--index {
+			.page-header_bottom {
+				background-color: #cef3f7;
+			}
+
+			.page-header_top {
+				background-color: #e0f5f9;
+			}
+		}
+
+		&_nav,
+		&_font-menu,
+		&_logo {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		&_logo {
+			padding-top: 0;
+
+			img {
+				width: 221px;
+			}
+		}
+
+		&_btn {
+			.btn-enroll {
+				display: inline-block;
+			}
+
+			.main-nav-toggler {
+				display: none;
+			}
+		}
+
+		&_search-toggler {
+			display: none;
+		}
+
+		&_search {
+			padding: 0 20px;
+			height: 45px;
+
+			input,
+			.input-group_btn {
+				background: #e2f7fa;
+			}
+
+			.input-group_input {
+				transform: none;
+			}
+		}
+
+		&_font-menu {
+			text-align: right;
+		}
+	}
+}
+
+.fixed-header {
+	display: none;
+	
+	@media screen and (min-width: 960px) {
+	    box-shadow: 0 0 10px 1px #c7dff2;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+		background: #fff;
+
+		&_container {
+			@include container();
+			display: table;
+			width: 100%;
+		}
+
+
+		&_logo,
+		&_nav {
+			display: table-cell;
+		}
+	}
+}

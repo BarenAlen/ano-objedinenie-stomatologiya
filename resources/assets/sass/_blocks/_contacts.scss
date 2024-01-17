@@ -1,0 +1,14 @@
+.contacts {
+
+	font-weight: 300;
+	font-size: 1.333333em;
+
+	&_title {
+		font-weight: normal;
+		color: #000; 
+	}
+
+	@media screen and (min-width: 960px) {
+		font-size: 1em;
+	}
+}

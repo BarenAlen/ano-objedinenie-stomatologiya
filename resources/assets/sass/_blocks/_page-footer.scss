@@ -1,0 +1,46 @@
+.page-footer {
+
+	padding-top: 30px;
+	padding-bottom: 20px;
+
+	&_link {
+		color: #1a1a1a;
+		font-weight: 300;
+		display: block;
+		margin-bottom: 6px;
+		border-bottom: 0;
+	}
+
+	&_foot {
+		color: #808080;
+		font-weight: 300;
+		margin-top: 34px;
+	}
+
+	.logo-itgro {
+		display: block;
+		width: 38px;
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	.btn-enroll {
+		margin-bottom: 26px;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 720px) {
+		.logo-itgro {
+			width: 53px;
+		}
+	}
+
+	@media screen and (min-width: 960px) {
+		padding-top: 50px;
+		padding-bottom: 30px;
+
+		&_foot {
+			margin-top: 70px;
+		}
+	}
+}

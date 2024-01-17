@@ -1,0 +1,91 @@
+.review {
+	border: 1px solid #d0d0d0;
+	padding: 30px 25px 0 46px;
+	margin: 0 auto;
+	position: relative;
+	max-width: 780px;
+
+	&::before,
+	&::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 26px;
+		height: 90px;
+		background-color: #fff;
+		position: absolute;
+		font-size: 80px;
+		white-space: nowrap;
+		font-family: 'Verdana', serif;
+		z-index: 5;
+		background-image: url("../img/quotes.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 26px 21px;
+	}
+
+	&::before {
+		top: 0;
+		left: -1px;
+		transform: rotate(180deg);
+	}
+
+	&::after {
+		right: -1px;
+		bottom: 0;
+	}
+
+	&_head {
+		color: #333333;
+		line-height: 1.5;
+		font-weight: normal;
+	}
+
+	&_body {
+
+	}
+
+	&_title {
+		font-size: 1.3125em;
+		line-height: 1.2;
+	}
+
+	@media screen and (min-width: 960px) {
+		padding: 50px 76px 44px;
+
+		&::before,
+		&::after {
+			width: 56px;
+			height: 144px;
+			background-size: 56px 46px;
+		}
+
+		&::before {
+			left: -28px;
+		}
+
+		&::after {
+			right: -28px;
+		}
+	}
+}
+
+.review-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin-bottom: 16px;
+	}
+
+	.review {
+		min-width: 100%;
+	}
+
+	@media screen and (min-width: 960px) {
+		li {
+			margin-bottom: 30px;
+		}
+	}
+}

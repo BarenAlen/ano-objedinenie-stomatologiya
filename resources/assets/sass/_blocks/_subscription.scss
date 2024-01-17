@@ -1,0 +1,96 @@
+.subscription {
+
+	background: $accent-color;
+	padding: 35px 0;
+	margin-top: 80px;
+
+	a {
+		border-bottom-color: #fff;
+	}
+
+	&_row {
+
+		& > * {
+			margin-bottom: 15px;
+		}
+	}
+
+	&_label {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 21px;
+		color: #fff;
+		position: relative;
+		padding-left: 48px;
+		width: 240px;
+		min-width: 240px;
+		line-height: 1.1;
+		padding-right: 14px;
+
+		&::before {
+			content: "";
+			display: block;
+			width: 32px;
+			height: 31px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+
+			background-image: url("../img/icons/env.png");
+			background-size: 32px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_input {
+		
+	}
+
+	&_note,
+	&_note a {
+		color: #fff;
+		font-weight: 300; 
+	}
+
+	@media screen and (min-width: 960px) {
+
+		margin-top: 140px;
+
+		&_input {
+			width: 35%;
+			min-width: 320px;
+			padding-right: 20px;
+		}
+
+		&_submit {
+			padding-right: 20px;
+		}
+
+		&_note {
+			padding: 0 20px;
+			width: 340px;
+			border-left: 1px solid rgba(255,255,255,.4);
+		}
+
+		&_row {
+			display: table;
+			width: 100%;
+
+			& > * {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	&--index {
+		margin-top: 0;
+	}
+
+	@media screen and (min-width: 1400px) {
+		&_input {
+			width: 40%;
+		}
+	}
+}

@@ -1,0 +1,116 @@
+.vacancy {
+	
+	font-weight: 300;
+	padding: 106px 0 40px;
+	border-top: 1px solid #cfcfcf;
+	background-image: url("../img/icons/doctor.png");
+	background-repeat: no-repeat;
+	background-position: left 20px;
+	background-size: 78px;
+
+	&:last-child {
+		border-bottom: 1px solid #cfcfcf;
+	}
+
+	&_name {
+		font-size: 1.5em;
+		display: inline;
+		text-decoration: none;
+		border-bottom: 1px solid $link-color;
+		font-weight: normal;
+	}
+
+	&_txt {
+		margin: 12px 0;
+	}
+
+	&_salary {
+		font-size: 1.5em;
+		margin-bottom: 2px;
+		font-weight: normal;
+		color: #000;
+	}
+
+	&_address {
+	    max-width: 200px;
+	}
+
+	@media screen and (min-width: 960px) {
+		display: flex;
+		flex-direction: row;
+		padding: 34px 0 28px;
+		padding-left: 160px;
+		background-position: 30px center;
+
+		&_data {
+			min-width: 300px;
+		}
+
+		&_content {
+		    flex-basis: 480px;
+    		flex-shrink: 0;
+		}
+
+		&_data,
+		&_content {
+			padding-right: 20px;
+		}
+
+		&_salary {
+			margin-bottom: 14px;
+		}
+
+		&_name,
+		&_salary {
+			font-size: 1.3125em;
+		}
+
+		&_txt {
+			margin-top: 14px;
+		}
+
+		&_address {
+			max-width: 220px;
+		}
+	}
+}
+
+.vacancy-lg {
+	padding-top: 160px;
+	background-image: url("../img/icons/doctor.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	&_title {
+		margin-bottom: 8px;
+	}
+
+	&_salary {
+		font-size: 1.75em;
+		color: #000;
+		margin-bottom: 4px;
+	}
+
+	&_txt {
+		font-weight: 300;
+		margin-bottom: 4px;
+	}
+
+	@media screen and (min-width: 960px) {
+		padding-top: 0;
+		background-position: 32px center;
+
+		&_content {
+			padding-left: 240px;
+		}
+
+		&_salary {
+			font-size: 1.875em;
+		}
+
+		&_txt {
+			font-size: 1.3125em;
+			margin-bottom: 8px;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+$fonts-path: '../fonts/';
+
+@font-face {
+	// CoreSansE Regular
+	font-family: 'CoreSansE';
+	src:
+	url($fonts-path + 'CoreSansE-Regular.otf') format('opentype'),
+	url($fonts-path + 'CoreSansE-Regular.eot'),
+	url($fonts-path + 'CoreSansE-Regular.woff') format('woff'),
+	url($fonts-path + 'CoreSansE-Regular.svg') format('svg'),
+	url($fonts-path + 'CoreSansE-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	// CoreSansE Light 300
+	font-family: 'CoreSansE';
+	src:
+	url($fonts-path + 'CoreSansE-Light.otf') format('opentype'),
+	url($fonts-path + 'CoreSansE-Light.eot'),
+	url($fonts-path + 'CoreSansE-Light.woff') format('woff'),
+	url($fonts-path + 'CoreSansE-Light.svg') format('svg'),
+	url($fonts-path + 'CoreSansE-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	// CoreSansE Medium 500
+	font-family: 'CoreSansE';
+	src:
+	url($fonts-path + 'CoreSansE-Medium.otf') format('opentype'),
+	url($fonts-path + 'CoreSansE-Medium.eot'),
+	url($fonts-path + 'CoreSansE-Medium.woff') format('woff'),
+	url($fonts-path + 'CoreSansE-Medium.svg') format('svg'),
+	url($fonts-path + 'CoreSansE-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}

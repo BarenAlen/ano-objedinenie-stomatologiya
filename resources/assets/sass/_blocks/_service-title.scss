@@ -1,0 +1,84 @@
+.service-title {
+	padding-left: 42px;
+	background-position: left center;
+	font-weight: 500;
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 42px;
+		height: 50px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background-repeat: no-repeat !important;
+		background-position: left center;
+		background-size: 30px;
+	}
+
+	&--whitening {
+		&::before {
+			background-image: url("../img/services/whitening.png")
+		}
+	}
+
+	&--bite {
+		&::before {
+			background-image: url("../img/services/bite.png")
+		}
+	}
+
+	&--bone-surgery {
+		&::before {
+			background-image: url("../img/services/bone-surgery.png")
+		}
+	}
+
+	&--children {
+		&::before {
+			background-image: url("../img/services/children.png")
+		}
+	}
+
+	&--hygiene {
+		&::before {
+			background-image: url("../img/services/hygiene.png")
+		}
+	}
+
+	&--implantation {
+		&::before {
+			background-image: url("../img/services/implantation.png")
+		}
+	}
+
+	&--microscope {
+		&::before {
+			background-image: url("../img/services/microscope.png")
+		}
+	}
+
+	&--prosthetics {
+		&::before {
+			background-image: url("../img/services/prosthetics.png")
+		}
+	}
+
+	&--therapy {
+		&::before {
+			background-image: url("../img/services/therapy.png")
+		}
+	}
+
+	@media screen and (min-width: 960px) {
+		padding-left: 80px;
+
+		&::before {
+			background-size: auto;
+			width: 80px;
+			height: 80px;
+		}
+	}
+}

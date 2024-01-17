@@ -1,0 +1,136 @@
+.services-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	// @include clearfix;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	li {
+		display: block;
+		width: 50%;
+		// float: left;
+		min-height: 130px;
+		border: 1px solid #f0f0f0;
+		position: relative;
+		margin-bottom: 0;
+
+		& > .btn {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		&.visible-xs {
+			border: 0;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		li {
+			width: 33.333%;
+			min-height: 250px;
+		}
+	}
+}
+
+.service {
+	display: block;
+	padding: 10px;
+	padding-top: 78px;
+	height: 100%;
+	// position: absolute;
+	transition: .3s;
+	background: #fff;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-decoration: none;
+	background-repeat: no-repeat !important;
+	background-position: 10px 20px;
+	border-bottom: 0;
+
+	&_title {
+		font-weight: 400;
+		margin: 0;
+		font-size: 1.3125em;
+	}
+
+	&_description {
+		display: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+		top: -2px;
+		bottom: -2px;
+		left: -2px;
+		right: -2px;
+	    box-shadow: 0 -1px 20px 1px rgba(5,183,210,0.25);
+	    z-index: 3;
+	}
+
+	&--therapy {
+		background-image: url("../img/services/therapy.png");
+		background-size: 46px;
+	}
+
+	&--implantation {
+		background-image: url("../img/services/implantation.png");
+		background-size: 36px;
+	}
+
+	&--bite {
+		background-image: url("../img/services/bite.png");
+		background-size: 37px;
+	}
+
+	&--whitening {
+		background-image: url("../img/services/whitening.png");
+		background-size: 43px;
+	}
+
+	&--hygiene {
+		background-image: url("../img/services/hygiene.png");
+		background-size: 44px;
+	}
+
+	&--children {
+		background-image: url("../img/services/children.png");
+		background-size: 46px;
+	}
+
+	&--microscope {
+		background-image: url("../img/services/microscope.png");
+		background-size: 40px;
+	}
+
+	&--bone-surgery {
+		background-image: url("../img/services/bone-surgery.png");
+		background-size: 43px;
+	}
+
+	&--prosthetics {
+		background-image: url("../img/services/prosthetics.png");
+		background-size: 36px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 30px;
+		padding-top: 102px;
+		background-position: 30px 30px;
+		background-size: auto !important;
+
+		&_description {
+			display: block;
+			font-weight: 300;
+			color: #666666;
+		}
+
+		&_title {
+			margin-bottom: 8px;
+		}
+	}
+}

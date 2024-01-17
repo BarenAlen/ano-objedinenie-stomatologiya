@@ -1,0 +1,67 @@
+[class^="icon-"] {
+    text-align: center;
+    vertical-align: middle;
+    &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        border: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+.icon-calendar {
+	&::before {
+		width: 18px;
+		height: 16px;
+		background-image: url("../img/icons/calendar.png");
+	}
+}
+
+.icon-arrow-down {
+	&::before {
+		width: 9px;
+		height: 6px;
+		background-image: url("../img/icons/arrow-down.png");
+	}
+}
+
+.icon-search {
+	&::before {
+		width: 18px;
+		height: 16px;
+		background-image: url(../img/icons/search.png);
+		background-size: contain;
+	}
+}
+
+.icon-circle-check {
+	&::before {
+		width: 25px;
+		height: 25px;
+		background-image: url(../img/icons/check-circle.png);
+		background-size: contain;
+	}
+}
+
+button, a {
+	&:hover .icon-search::before {
+		background-image: url(../img/icons/search-hover.png);
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.icon-calendar {
+		&::before {
+			width: 18px;
+			height: 28px;
+		}
+	}
+
+	.icon-search {
+		&::before {
+			width: 21px;
+			height: 21px;
+		}
+	}
+}

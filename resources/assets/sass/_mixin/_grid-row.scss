@@ -1,0 +1,21 @@
+// отступы в сетке бутстрапа
+// необходимо добавить .row-grid к.row
+
+@mixin grid-row($class, $params:(margin: 'preserve', items: 1)) {
+  
+  @if (map-get($params, margin) != 'preserve') {
+    .row.row-grid [class*="col-"] + [class*="col-"] {
+      #{$class} {
+        margin-top: map-get($params, margin);
+      }
+    }
+  }
+  
+  @if (map-get($params, items) > 1) {
+    .row.row-grid [class*="col-"]:nth-child(-n + #{map-get($params, items)}) {
+      #{$class} {
+        margin-top: 0;
+      }
+    }
+  }
+}
